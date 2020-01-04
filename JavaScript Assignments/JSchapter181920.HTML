@@ -1,0 +1,33 @@
+<script>
+
+//JS chapter 18 19 20
+//Customize previous assignment "ch_15_16_17" with for loop.
+var courses = [];
+
+for(var i = 1; i < 6; i++){
+    
+    //Taking user Input
+    courses [i] = prompt("Please enter course" + [i] + " name ");
+}
+
+//Print //why this is showing comma?
+alert (courses);
+
+
+for(var i = 1; i < 6; i++){
+    
+    //Taking Edited Value from user
+    courses [i] = prompt( "Your course" + [i] + " name is: " + courses [i]);
+    
+}
+        ///ISSUEEEEEE IN THIS CODE
+for(var i = 0; i < 6; i++){
+    
+    //Saving edited values in courses array using SPLICE
+    courses.splice([i],[i],courses [i]);
+}
+
+    //Print
+    alert(" Edited courses names: " + courses);
+
+</script>

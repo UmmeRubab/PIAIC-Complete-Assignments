@@ -1,0 +1,29 @@
+<script>
+
+    //JS chapter 10 to 14 Percentage Calculator    
+    //Taking user inputs for courses
+    var course1 = prompt (" Please enter first course marks out of 100.");
+    var course2 = prompt (" Please enter second course marks out of 100.");
+    var course3 = prompt (" Please enter third course marks out of 100.");
+    var course4 = prompt (" Please enter forth course marks out of 100.");
+    var course5 = prompt (" Please enter fifth course marks out of 100."); 
+
+   //Converting prompt's string input into integer. 
+    var course1ToInt = parseInt(course1);
+    var course2ToInt = parseInt(course2);
+    var course3ToInt = parseInt(course3);
+    var course4ToInt = parseInt(course4);
+    var course5ToInt = parseInt(course5);
+
+    //saving total marks
+    var obtainedMarks = course1ToInt + course2ToInt + course3ToInt + course4ToInt + course5ToInt;
+    // total marks fixed by programmer
+    var totalMarks = 500;
+        
+    //calculating total percentage as per formula: obtainedMarks * 100/ totalMarks
+    var totalPercentage = obtainedMarks * 100/totalMarks;
+    
+    //print
+    alert(" Your total percentage is: " + totalPercentage + "%");
+
+    </script>

@@ -1,0 +1,61 @@
+<script>
+
+    //JS chapter 39 to 42
+
+    /*  Get the 5-course number from the userfor example course1 is 70 var totalMarks = 500
+Calculate the total percentage formula: obtainedMarks * 100/ totalMarks
+Calculate the grade use switch case 
+    
+    
+    */
+
+    //Taking user inputs for courses
+    var course1 = prompt (" Please enter first  course marks out of 100.");
+    var course2 = prompt (" Please enter second course marks out of 100.");
+    var course3 = prompt (" Please enter third  course marks out of 100.");
+    var course4 = prompt (" Please enter forth  course marks out of 100.");
+    var course5 = prompt (" Please enter fifth  course marks out of 100."); 
+
+    //Converting prompt's string input into integer. 
+    var course1ToInt = parseInt(course1);
+    var course2ToInt = parseInt(course2);
+    var course3ToInt = parseInt(course3);
+    var course4ToInt = parseInt(course4);
+    var course5ToInt = parseInt(course5);
+
+    //saving total marks
+    var obtainedMarks = course1ToInt + course2ToInt + course3ToInt + course4ToInt + course5ToInt;
+    // total marks fixed by programmer
+    var totalMarks = 500;
+        
+    //calculating total percentage as per formula: obtainedMarks * 100/ totalMarks
+    var totalPercentage = obtainedMarks * 100/totalMarks;
+
+    //Calculating the grade
+    switch(totalPercentage){
+        case (totalPercentage <= 90 || 100):
+             alert("Congratulations! You've got " + "A+ Grade");
+        break;
+
+        case (totalPercentage <=  75 || 89):
+             alert("Congratulations! You've got " + "A Grade");
+        break;
+
+        case (totalPercentage <= 60 || 74):
+             alert("Congratulations! You've got " + "B Grade");
+        break;
+
+        case (totalPercentage <= 45 || 60):
+             alert("Congratulations! You've got " + "C Grade");
+        break;
+        
+        case (totalPercentage <= 30 || 44):
+             alert("Congratulations! You've got " + "D Grade");
+        break;
+
+        Default:
+             alert("Sorry! You've got " + "F Grade");
+        break;
+    }
+ 
+</script>

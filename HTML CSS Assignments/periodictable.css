@@ -1,0 +1,105 @@
+#BG{
+    background-color:greenyellow;
+}
+table {
+    text-align: center;
+    font-weight: bold; 
+    border: 3px solid black;
+    
+}
+#palevioletred{
+    color: whitesmoke;
+    background-color: palevioletred;
+    width: 65px;
+    height: 50px;
+}
+#greenyellow{
+    background-color: greenyellow;
+    width: 65px;
+    height: 50px;
+}
+#skyblue{
+    color: whitesmoke;
+    background-color:skyblue;
+    width: 65px;
+    height: 50px;
+}
+#indigo{
+    color: whitesmoke;
+    background-color:indigo;
+    width: 65px;
+    height: 50px;
+}
+#blue{
+    color: whitesmoke;  
+    background-color: blue;
+    width: 65px;
+    height: 50px;
+}
+#chocolate{
+    color: whitesmoke;  
+    background-color:chocolate;
+    width: 65px;
+    height: 50px;
+}
+#gray{
+    color: whitesmoke;  
+    background-color:gray;
+    width: 65px;
+    height: 50px;
+}
+
+#mediumorchid{
+    color: whitesmoke;  
+    background-color:mediumorchid;
+    width: 65px;
+    height: 50px;
+}
+
+#red{
+    color: whitesmoke;  
+    background-color:red;
+    width: 65px;
+    height: 50px;
+}
+#Purple{
+    color: whitesmoke;  
+    background-color:purple;
+    width: 65px;
+    height: 50px;
+}
+#Royalblue{
+    color: whitesmoke;  
+    background-color:royalblue;
+    width: 65px;
+    height: 50px;
+}
+#greenyellow2{
+    color:black; 
+    background-color:greenyellow;
+    width: 65px;
+    height: 50px;
+    font-family: 'Segoe UI';
+    text: bold;
+}
+
+#table{
+    border: solid black;
+    border-collapse: collapse;
+}
+#para {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+hr.style2 {
+	border-top: 3px double black;
+}
+
+#hr{
+    border: 2px solid purple; width:50%;
+}

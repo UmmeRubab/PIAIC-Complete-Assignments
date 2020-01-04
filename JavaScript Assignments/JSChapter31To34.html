@@ -1,0 +1,58 @@
+<script>
+    
+//JS chapter 31 to 34
+var userName  = prompt( "Your name here " );
+var userDob   = prompt( " Date " );
+var userMonth = prompt( " Your month here " );
+var userYear  = prompt( " Your year here " );
+
+var msg = prompt("please enter num");
+
+if( msg <= 12 ){
+    alert("Hello " + userName + " GoodMorning ");
+}
+else if( msg >= 10 ){
+    alert("Hello " + userName + " Good Evening ");
+}
+else if( msg >= 11 ){
+    alert("Hello " + userName + " Good Night ");
+}
+
+//print
+alert("your DOB is " + userDob );
+
+var rightNow   = new Date();
+var monthsArray= [" January ", " Feburary "," March ", " April "," May ", " June "," July ", " August "," September ", " October "," November ", " December "];
+var otherDay   = new Date( monthsArray[userMonth] + userDob + ", " + userYear); //format (month date, year)
+var year       = rightNow.getFullYear()- otherDay.getFullYear();
+var month      = rightNow.getMonth()   - otherDay.getMonth();
+var days       = rightNow.getTime()    - otherDay.getTime();
+var hours      = rightNow.getHours()   - otherDay.getHours();
+var minutes    = rightNow.getMinutes() - otherDay.getMinutes();
+var seconds    = rightNow.getSeconds() - otherDay.getSeconds();
+
+ //milli seconds conversion //seconds (1000), minutes (60), hours (60), and days (24)
+//converts the milliseconds to days.
+var diffInDays = days / (1000 * 60 * 60 * 24);
+
+//You want a number that represents whole days,so you round down.
+var cyr= Math.floor(diffInDays/365);  
+
+//print
+alert(" You are " + year + " years " + month + " month " + cyr  + " days " + hours + " hours " + minutes + " minutes " + seconds + " seconds old ");
+
+var rightNow    = new Date();
+var totalDay    = new Date( monthsArray[userMonth] + userDob + ", " + userYear); //format (month date, year)
+var nextMonth   = rightNow.getMonth()   - totalDay.getMonth();
+var nextDays    = otherDay.getTime()    - new Date().getTime();
+var nextHours   = rightNow.getHours()   - totalDay.getHours();
+var nextMinutes = rightNow.getMinutes() - totalDay.getMinutes();
+var nextSeconds = rightNow.getSeconds() - totalDay.getSeconds();
+var diff        = days / (1000 * 60 * 60 * 24); //milli seconds conversion
+var ok          = Math.floor(diff);
+
+//print
+alert(" How much time left in your next birthday? " + ok  +  " days " + nextHours + " hours " + nextMinutes + " minutes " + 
+nextSeconds + " seconds ");
+
+</script>
