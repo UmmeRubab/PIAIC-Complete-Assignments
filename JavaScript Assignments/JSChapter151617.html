@@ -1,0 +1,40 @@
+<script>
+
+    //JS chapter 15 16 17
+    //Empty Array
+    var courses = [];
+
+    //Taking user Input
+    var course1= prompt("Please enter course1 name ");
+    var course2= prompt("Please enter course2 name ");
+    var course3= prompt("Please enter course3 name ");
+    var course4= prompt("Please enter course4 name ");
+    var course5= prompt("Please enter course5 name ");
+    
+    //Saving user inputs in Empty array
+    courses.push(course1);
+    courses.push(course2);
+    courses.push(course3);
+    courses.push(course4); 
+    courses.push(course5);
+
+    //Print
+    alert (courses);
+
+    //Print and Edit values
+    course1EditedValue= prompt(course1);
+    course2EditedValue= prompt(course2);
+    course3EditedValue= prompt(course3);
+    course4EditedValue= prompt(course4);
+    course5EditedValue= prompt(course5);
+
+    //Saving edited values in courses array using SPLICE
+    courses.splice(0,0,course1EditedValue);
+    courses.splice(1,1,course2EditedValue);
+    courses.splice(2,2,course3EditedValue);
+    courses.splice(3,3,course4EditedValue); 
+    courses.splice(4,4,course5EditedValue);
+
+    //Print
+    alert(" Edited courses names: " + courses);
+</script>

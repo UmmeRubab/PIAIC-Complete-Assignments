@@ -1,0 +1,33 @@
+.divStyle{
+    display: inline;
+    float: left;
+    margin: 150px 60px 60px 60px;
+    box-shadow:  4px 4px 4px 4px grey;
+    padding: 1px 1px 1px 1px;
+
+}
+
+.readMe{
+
+    color: white;
+    background-color: lightskyblue;
+    border-radius: 1px;
+    border:none; /*no border around button */
+    padding:10px 30px 10px 30px; /*spacing inside text and border of button */
+    font-weight:bold; 
+    border-radius: 8px; /*edges of button */
+    border-bottom: 3px solid rgb(145, 136, 128); /*bottom border of button */
+    margin-left:28px ;
+    margin-bottom:25px ;
+}
+
+p{
+    font-family: cursive;
+    color: gray;
+    padding: 0 10px 0 10px;
+}
+
+h3{
+    font-family: cursive;
+    padding: 0 10px 0 10px;
+}

@@ -1,0 +1,48 @@
+<script>
+
+    //JS chapter 10 to 14
+    //Calculator
+    //Taking user input
+    var num1 = prompt ( "Please Enter first number. " );
+    var num2 = prompt ( "Please Enter second number. " );
+    var mathOperation = prompt ( "Please Enter any math operation sign. " );
+
+    //Converting prompt's string input into integer.
+    var num1ToInt = parseInt(num1);
+    var num2ToInt = parseInt(num2);
+
+    //Saving results in this variable.    
+    var result = "";
+
+    //Using switch to perform mathematical operations
+    switch (mathOperation){
+        case "+" :
+        result = num1ToInt + num2ToInt;
+        alert( " your answer is : " + result );    
+        break;
+  
+        case "-" :
+        result = num1ToInt - num2ToInt;
+        alert( " your answer is : " + result );    
+        break;
+    
+        case "*" :
+        result = num1ToInt * num2ToInt;
+        alert( " your answer is : " + result );    
+        break;
+    
+        case "/" :
+        result = num1ToInt / num2ToInt;
+        alert( " your answer is : " + result );    
+        break;
+    
+        case "%" :
+        result = num1ToInt % num2ToInt;
+        alert( " your answer is : " + result );    
+        break;
+  
+        default:
+        alert("program is not working");      
+    }
+
+    </script>
