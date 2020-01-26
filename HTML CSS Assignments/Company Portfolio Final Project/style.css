@@ -335,6 +335,7 @@
 .sixthservice{
     width: 1515px;
     height: 250px;
+    
 }
 
 .ourservices{
@@ -391,7 +392,8 @@
 }
 #Market{
     margin-top: -100px;
-    padding-right: 10px;}
+    padding-right: 10px;
+}
 
 #Brand{
     margin-top: -100px;
@@ -546,12 +548,14 @@
     margin-top:-40px; 
     
 }
-.userheading1{
+
+.box-1{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color:grey;
     font-weight:bold;
-    text-align: center;
+    padding-left: 330px;
+    padding-bottom: -20px;
  
+
 }
 
 .userheading2{

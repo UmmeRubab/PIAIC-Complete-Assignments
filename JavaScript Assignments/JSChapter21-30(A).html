@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+
+<script>
+
+
+//JS chapter 21 to 30
+//Taking input from user 
+var userInput = prompt("Please enter any number with decimal point");
+
+//converting string to float number
+var convertedNum = parseFloat(userInput); 
+
+//converting float number to greater number
+var greaterNum = Math.ceil(convertedNum);
+
+//string variable
+var text = "This is a STRING text";
+var ReverseText = "";
+
+//Slicing the text
+var slicedText = text.slice(0,greaterNum);
+alert(slicedText);
+
+
+for (let i = text.length - 1; i >= 0; i--) {
+  ReverseText +=  text[i];
+                
+   }
+  alert(`"${text.join("")}"`);
+            
+  alert(`"${ReverseText}"`);
+</script>
